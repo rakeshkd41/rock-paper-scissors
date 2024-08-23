@@ -62,3 +62,20 @@ function playRound(humanChoice, computerChoice) {
   score = [computerScore, humanScore]
   return score
 }
+
+function playGame() {
+  for (let i = 0; i < 5; i++) {
+    playRound(getHumanChoice(), getComputerChoice())
+  }
+  console.log(`Computer Score: ${score[0]} \n Human Score: ${score[1]}`)
+
+  if (score[0] > score[1]) {
+    console.log('You lose the game!')
+  } else if (score[0] < score[1]) {
+    console.log('You Win the game')
+  } else {
+    console.log("It's a Draw!")
+  }
+}
+
+playGame()
