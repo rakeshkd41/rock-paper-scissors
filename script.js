@@ -9,3 +9,16 @@ function getComputerChoice() {
     return 'scissors'
   }
 }
+
+function getHumanChoice() {
+  const humanChoice = prompt('Enter your choice', 'rock').toLowerCase()
+  if (
+    humanChoice === 'rock' ||
+    humanChoice === 'paper' ||
+    humanChoice === 'scissors'
+  ) {
+    return humanChoice
+  } else {
+    return 'rock'
+  }
+}
