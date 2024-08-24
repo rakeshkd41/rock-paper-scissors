@@ -49,3 +49,13 @@ function playRound(humanChoice, computerChoice) {
   score = [computerScore, humanScore]
   return score
 }
+
+const rock = document.querySelector('.rock')
+const paper = document.querySelector('.paper')
+const scissors = document.querySelector('.scissors')
+let playerS = document.querySelector('.player-score')
+let computerS = document.querySelector('.computer-score')
+const gameOver = document.querySelector('.game-over')
+const resultShow = document.querySelector('.choose-your-move')
+const roundWinner = document.querySelector('.round-winner')
+const buttonStorage = document.querySelector('.player-move')
