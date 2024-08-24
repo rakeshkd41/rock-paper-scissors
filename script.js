@@ -46,7 +46,7 @@ function playRound(humanChoice, computerChoice) {
       console.log("It's Draw! Scissors Scissors")
     }
   }
-  score = [computerScore, humanScore]
+  score = [humanScore, computerScore]
   return score
 }
 
