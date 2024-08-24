@@ -91,3 +91,16 @@ scissors.addEventListener('click', () => {
     result()
   }
 })
+
+function result() {
+  if (score[0] >= 5) {
+    restartButton()
+    gameOver.textContent = 'Game Over!!'
+    resultShow.textContent = 'You Won The Game'
+  } else if (score[1] >= 5) {
+    restartButton()
+    gameOver.textContent = 'Game Over!!'
+    resultShow.textContent = 'Computer Won The Game'
+  }
+  resultShow.style.color = '#00FF00'
+}
