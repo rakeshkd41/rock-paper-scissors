@@ -74,7 +74,6 @@ rock.addEventListener('click', () => {
 
 paper.addEventListener('click', () => {
   playRound('paper', getComputerChoice())
-  console.log(score[0], ' ', score[1])
   playerS.textContent = `Player: ${score[0]}`
   computerS.textContent = `Computer: ${score[1]}`
   if (score[0] >= 5 || score[1] >= 5) {
@@ -84,7 +83,6 @@ paper.addEventListener('click', () => {
 
 scissors.addEventListener('click', () => {
   playRound('scissors', getComputerChoice())
-  console.log(score[0], ' ', score[1])
   playerS.textContent = `Player: ${score[0]}`
   computerS.textContent = `Computer: ${score[1]}`
   if (score[0] >= 5 || score[1] >= 5) {
