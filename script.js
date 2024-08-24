@@ -10,19 +10,6 @@ function getComputerChoice() {
   }
 }
 
-function getHumanChoice() {
-  const humanChoice = prompt('Enter your choice', 'rock').toLowerCase()
-  if (
-    humanChoice === 'rock' ||
-    humanChoice === 'paper' ||
-    humanChoice === 'scissors'
-  ) {
-    return humanChoice
-  } else {
-    return 'rock'
-  }
-}
-
 let humanScore = 0
 let computerScore = 0
 let score = [0, 0]
