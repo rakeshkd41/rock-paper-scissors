@@ -62,3 +62,12 @@ const buttonStorage = document.querySelector('.player-move')
 
 playerS.textContent = `Player: ${score[0]}`
 computerS.textContent = `Computer: ${score[1]}`
+
+rock.addEventListener('click', () => {
+  playRound('rock', getComputerChoice())
+  playerS.textContent = `Player: ${score[0]}`
+  computerS.textContent = `Computer: ${score[1]}`
+  if (score[0] >= 5 || score[1] >= 5) {
+    result()
+  }
+})
