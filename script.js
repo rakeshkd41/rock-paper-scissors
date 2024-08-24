@@ -59,3 +59,6 @@ const gameOver = document.querySelector('.game-over')
 const resultShow = document.querySelector('.choose-your-move')
 const roundWinner = document.querySelector('.round-winner')
 const buttonStorage = document.querySelector('.player-move')
+
+playerS.textContent = `Player: ${score[0]}`
+computerS.textContent = `Computer: ${score[1]}`
