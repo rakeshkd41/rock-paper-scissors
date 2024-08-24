@@ -104,3 +104,28 @@ function result() {
   }
   resultShow.style.color = '#00FF00'
 }
+
+function restartButton() {
+  const restart = document.createElement('button')
+  restart.textContent = 'Restart'
+  restart.style.cssText =
+    'padding: 6px 24px; border: none; font-size: 16px; font-weight: 600; cursor: pointer;'
+  buttonStorage.appendChild(restart)
+  buttonStorage.removeChild(rock)
+  buttonStorage.removeChild(paper)
+  buttonStorage.removeChild(scissors)
+
+  roundWinner.textContent = ''
+
+  restart.addEventListener('click', () => {
+    humanScore = 0
+    computerScore = 0
+    playerS.textContent = `Player: ${humanScore}`
+    computerS.textContent = `Computer: ${computerScore}`
+    gameOver.textContent = ''
+    resultShow.textContent = 'Choose your move'
+    resultShow.style.color = 'unset'
+    buttonStorage.append(rock, paper, scissors)
+    buttonStorage.removeChild(restart)
+  })
+}
